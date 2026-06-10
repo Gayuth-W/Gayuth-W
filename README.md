@@ -1,21 +1,19 @@
 <h1 align="center">Hi 👋, I'm Gayuth Waidyaratne</h1>
 
-<h3 align="center">Computer Science Undergraduate | Backend Developer | DevOps Enthusiast</h3>
+<h3 align="center">Computer Science Undergraduate @ Sri Lanka Institute of Information Technology</h3>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&center=true&vCenter=true&width=700&lines=Computer+Science+Student;Backend+Developer;DevOps+Enthusiast;Building+AI+Applications;Linux+and+Cloud+Technologies" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=700&center=true&vCenter=true&width=700&lines=Computer+Science+Student;Backend+Developer;DevOps+Enthusiast;Building+AI+Applications;Linux+and+Cloud+Technologies" />
 </p>
 
 <p align="center">
-  <a href="mailto:your-email@gmail.com">
+  <a href="mailto:gayuthdemika@gmail.com">
     <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
   </a>
 
-  <a href="https://linkedin.com/in/your-linkedin-profile">
+  <a href="https://www.linkedin.com/in/gayuth-waidyaratne">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
   </a>
-
-  <img src="https://komarev.com/ghpvc/?username=Gayuth-W&label=Profile%20Views&color=0e75b6&style=for-the-badge" />
 </p>
 
 ---
