@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gayuth Waidyaratne — Portfolio</title>
+<meta name="description" content="The portfolio of Gayuth Waidyaratne — Computer Science undergraduate, backend engineer, ICPC World Finalist. Read it as a book.">
+<meta property="og:title" content="Gayuth Waidyaratne — Portfolio">
+<meta property="og:description" content="A portfolio read as a book: projects, awards, and the voyage so far.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* ── page-flip engine styles ─────────────────────────────────── */
+.stf__parent{position:relative;display:block;box-sizing:border-box;transform:translateZ(0);-ms-touch-action:pan-y;touch-action:pan-y}
+.sft__wrapper{position:relative;width:100%;box-sizing:border-box}
+.stf__parent canvas{position:absolute;width:100%;height:100%;left:0;top:0}
+.stf__block{position:absolute;width:100%;height:100%;box-sizing:border-box;perspective:2000px}
+.stf__item{display:none;position:absolute;transform-style:preserve-3d}
+.stf__outerShadow,.stf__innerShadow,.stf__hardShadow,.stf__hardInnerShadow{position:absolute;left:0;top:0}
+
+/* ── tokens ──────────────────────────────────────────────────── */
+:root{
+  --sea:#0B222B;
+  --abyss:#05131A;
+  --vellum:#E9DEC2;
+  --vellum-2:#D6C49E;
+  --ink:#293330;
+  --ink-soft:#5D6359;
+  --gold:#C8A34A;
+  --gold-dim:#8E7333;
+  --rubric:#9B3B27;
+  --verdigris:#3E7A6E;
+  --display:'Cinzel',Georgia,serif;
+  --body:'EB Garamond',Georgia,'Times New Roman',serif;
+  --mono:'IBM Plex Mono',ui-monospace,'SF Mono',Menlo,monospace;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;min-height:100dvh;
+  background:radial-gradient(130% 90% at 50% -15%,#16414F 0%,var(--sea) 42%,var(--abyss) 100%);
+  color:var(--vellum);font-family:var(--body);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  padding:clamp(14px,2.6vw,34px) 14px clamp(20px,3vw,36px);
+  gap:clamp(12px,1.8vw,20px);
+  overflow-x:hidden;
+}
+#stars{position:fixed;top:0;left:0;width:2px;height:2px;border-radius:50%;pointer-events:none;z-index:0;box-shadow:39.27vw 54.94vh 0 0px rgba(233,222,194,0.45),67.39vw 87.43vh 0 0px rgba(233,222,194,0.28),6.02vw 46.64vh 0 0px rgba(233,222,194,0.62),63.09vw 32.49vh 0 0.5px rgba(233,222,194,0.62),69.99vw 38.63vh 0 0px rgba(233,222,194,0.29),5.07vw 89.77vh 0 0px rgba(233,222,194,0.67),43.45vw 42.29vh 0 0.5px rgba(233,222,194,0.71),10.34vw 68.29vh 0 0.5px rgba(233,222,194,0.35),77.26vw 71.63vh 0 0px rgba(233,222,194,0.7),83.38vw 49.31vh 0 0.5px rgba(233,222,194,0.24),80.86vw 41.96vh 0 0px rgba(233,222,194,0.23),95.99vw 56.78vh 0 0px rgba(233,222,194,0.67),12.57vw 16.76vh 0 0px rgba(233,222,194,0.67),36.29vw 75.18vh 0 0px rgba(233,222,194,0.24),18.56vw 3.87vh 0 0.5px rgba(233,222,194,0.26),51.05vw 36.31vh 0 0px rgba(233,222,194,0.48),81.8vw 9.22vh 0 0px rgba(233,222,194,0.23),17.53vw 79.38vh 0 0px rgba(233,222,194,0.22),48.16vw 26.22vh 0 0px rgba(233,222,194,0.31),42.56vw 73.63vh 0 0.5px rgba(233,222,194,0.61),30.43vw 48.48vh 0 0px rgba(233,222,194,0.38),47.12vw 93.16vh 0 0.5px rgba(233,222,194,0.36),95.91vw 16.8vh 0 0px rgba(233,222,194,0.39),89.61vw 42.87vh 0 0.5px rgba(233,222,194,0.39),93.32vw 28.65vh 0 0.5px rgba(233,222,194,0.56),64.66vw 6.73vh 0 0px rgba(233,222,194,0.2),22.52vw 89.18vh 0 0px rgba(233,222,194,0.44),17.37vw 21.16vh 0 0px rgba(233,222,194,0.22),51.08vw 94.76vh 0 0.5px rgba(233,222,194,0.28),52.76vw 33.0vh 0 0px rgba(233,222,194,0.2),97.56vw 7.07vh 0 0px rgba(233,222,194,0.25),41.29vw 5.43vh 0 0px rgba(233,222,194,0.62),44.75vw 41.89vh 0 0px rgba(233,222,194,0.51),35.76vw 78.09vh 0 0.5px rgba(233,222,194,0.67),63.86vw 94.53vh 0 0px rgba(233,222,194,0.71),74.73vw 79.15vh 0 0px rgba(233,222,194,0.29),88.08vw 49.01vh 0 0px rgba(233,222,194,0.66),75.58vw 93.16vh 0 0px rgba(233,222,194,0.72),90.7vw 66.98vh 0 0.5px rgba(233,222,194,0.62),82.06vw 43.98vh 0 0px rgba(233,222,194,0.25),21.01vw 25.49vh 0 0.5px rgba(233,222,194,0.54),93.75vw 22.91vh 0 0px rgba(233,222,194,0.71),40.33vw 47.6vh 0 0.5px rgba(233,222,194,0.65),56.59vw 22.39vh 0 0px rgba(233,222,194,0.28),61.79vw 25.35vh 0 0.5px rgba(233,222,194,0.42),47.06vw 15.81vh 0 0px rgba(233,222,194,0.3),15.45vw 19.73vh 0 0px rgba(233,222,194,0.31),21.92vw 96.37vh 0 0px rgba(233,222,194,0.52),84.21vw 83.81vh 0 0px rgba(233,222,194,0.2),95.47vw 2.1vh 0 0px rgba(233,222,194,0.59),47.94vw 85.0vh 0 0px rgba(233,222,194,0.33),66.72vw 29.15vh 0 0px rgba(233,222,194,0.61),12.01vw 81.53vh 0 0px rgba(233,222,194,0.56),69.06vw 26.55vh 0 0px rgba(233,222,194,0.57),50.91vw 40.14vh 0 0px rgba(233,222,194,0.68),17.25vw 36.55vh 0 0px rgba(233,222,194,0.29),24.56vw 73.99vh 0 0px rgba(233,222,194,0.43),46.73vw 79.34vh 0 0px rgba(233,222,194,0.67),37.45vw 31.18vh 0 0px rgba(233,222,194,0.5),23.73vw 13.5vh 0 0px rgba(233,222,194,0.23),20.02vw 24.43vh 0 0.5px rgba(233,222,194,0.44),12.54vw 13.94vh 0 0px rgba(233,222,194,0.18),33.09vw 33.71vh 0 0px rgba(233,222,194,0.38),82.55vw 33.45vh 0 0px rgba(233,222,194,0.49),94.55vw 20.48vh 0 0px rgba(233,222,194,0.49),84.0vw 64.26vh 0 0px rgba(233,222,194,0.36),70.12vw 33.68vh 0 0.5px rgba(233,222,194,0.35),18.91vw 63.76vh 0 0px rgba(233,222,194,0.71),78.7vw 69.97vh 0 0px rgba(233,222,194,0.35),43.73vw 4.7vh 0 0px rgba(233,222,194,0.62),46.1vw 51.2vh 0 0px rgba(233,222,194,0.31),63.51vw 70.89vh 0 0px rgba(233,222,194,0.48),93.76vw 38.54vh 0 0px rgba(233,222,194,0.23),53.66vw 23.29vh 0 0px rgba(233,222,194,0.19),39.31vw 41.9vh 0 0px rgba(233,222,194,0.24),46.87vw 3.62vh 0 0px rgba(233,222,194,0.38),3.96vw 21.13vh 0 0px rgba(233,222,194,0.49),88.92vw 60.73vh 0 0px rgba(233,222,194,0.63),43.49vw 99.45vh 0 0px rgba(233,222,194,0.47),14.48vw 59.79vh 0 0.5px rgba(233,222,194,0.64),99.87vw 27.39vh 0 0.5px rgba(233,222,194,0.7),68.81vw 8.99vh 0 0px rgba(233,222,194,0.43),15.64vw 57.86vh 0 0px rgba(233,222,194,0.33),8.17vw 0.48vh 0 0px rgba(233,222,194,0.22),18.95vw 48.71vh 0 0px rgba(233,222,194,0.35),45.29vw 70.33vh 0 0px rgba(233,222,194,0.5),97.14vw 0.52vh 0 0px rgba(233,222,194,0.4),99.5vw 1.51vh 0 0px rgba(233,222,194,0.26),96.15vw 21.71vh 0 0px rgba(233,222,194,0.62),17.69vw 95.19vh 0 0px rgba(233,222,194,0.61);animation:drift 16s ease-in-out infinite alternate}
+@keyframes drift{from{opacity:.55}to{opacity:.95}}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
+
+/* ── book shell ──────────────────────────────────────────────── */
+/* 1.6 = (2 × page width 560) ÷ page height 700 — keeps the spread inside the viewport */
+.stage{position:relative;z-index:1;width:min(100%,1180px);max-width:calc((100dvh - 210px) * 1.6);display:flex;justify-content:center}
+#book{margin-inline:auto;transition:transform .75s cubic-bezier(.22,.61,.36,1)}
+.page{overflow:hidden;background:var(--vellum);box-shadow:0 18px 55px rgba(0,0,0,.45)}
+.sheet{
+  container-type:inline-size;
+  position:relative;width:100%;height:100%;overflow:hidden;
+  background-color:var(--vellum);
+  background-image:
+    radial-gradient(circle at 18% 8%,rgba(255,253,244,.6),transparent 50%),
+    radial-gradient(circle at 88% 94%,rgba(150,118,64,.13),transparent 58%);
+  color:var(--ink);
+}
+.sheet::before{
+  content:'';position:absolute;inset:0;pointer-events:none;opacity:.08;mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+/* spine shading always falls on the gutter side */
+.sheet::after{content:'';position:absolute;inset:0;pointer-events:none}
+.page--right .sheet::after{background:linear-gradient(90deg,rgba(88,66,30,.22),transparent 9%)}
+.page--left  .sheet::after{background:linear-gradient(270deg,rgba(88,66,30,.22),transparent 9%)}
+.leaf{position:relative;z-index:1;width:100%;height:100%;padding:6.4cqi 6cqi 4.4cqi;display:flex;flex-direction:column;font-size:2.75cqi;line-height:1.5}
+.page--roomy .leaf{font-size:3.1cqi}
+
+/* ── chapter furniture ───────────────────────────────────────── */
+.ch{display:flex;align-items:baseline;gap:2.2cqi;margin-bottom:1cqi}
+.ch__num{font-family:var(--display);font-size:3.2cqi;font-weight:700;color:var(--gold-dim);letter-spacing:.08em;line-height:1}
+.ch__title{font-family:var(--display);font-size:5.1cqi;font-weight:600;letter-spacing:.05em;margin:0;line-height:1;text-transform:uppercase}
+.ch__kicker{font-family:var(--mono);font-size:1.95cqi;letter-spacing:.24em;text-transform:uppercase;color:var(--ink-soft);margin:0 0 1.1cqi}
+.sub-head{font-family:var(--mono);font-size:1.95cqi;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-dim);margin:0 0 1.6cqi}
+.rule{display:flex;align-items:center;gap:1.4cqi;margin:0 0 3.6cqi}
+.rule::before,.rule::after{content:'';height:1px;background:linear-gradient(90deg,transparent,var(--vellum-2),transparent);flex:1}
+.rule i{display:block;width:1.5cqi;height:1.5cqi;transform:rotate(45deg);background:var(--gold);opacity:.75}
+.rule--tight{margin-bottom:2.4cqi}
+
+.body{flex:1;min-height:0;padding-bottom:2cqi;display:flex;flex-direction:column;justify-content:space-between}
+.stretch{flex:1;display:flex;flex-direction:column}
+.fill{flex:1;display:flex;flex-direction:column;justify-content:space-between}
+.folio{margin-top:auto;padding-top:1.9cqi;border-top:1px solid rgba(120,96,50,.24);display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:1.85cqi;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft)}
+.folio b{font-weight:500;color:var(--gold-dim)}
+
+/* ── entries ─────────────────────────────────────────────────── */
+.entry{margin-bottom:3.6cqi}
+.entry:last-child{margin-bottom:0}
+.entry__head{display:flex;justify-content:space-between;align-items:baseline;gap:2cqi}
+.entry__title{font-family:var(--body);font-weight:600;font-size:3.35cqi;margin:0;line-height:1.2}
+.entry__title em{font-style:italic;font-weight:400;color:var(--ink-soft)}
+.entry__date{font-family:var(--mono);font-size:1.85cqi;letter-spacing:.06em;color:var(--ink-soft);white-space:nowrap;flex:none}
+.entry__sub{font-style:italic;margin:.35cqi 0 0;color:var(--ink-soft)}
+.stack{font-family:var(--mono);font-size:1.85cqi;letter-spacing:.09em;color:var(--verdigris);margin:.9cqi 0 .7cqi;text-transform:uppercase;line-height:1.6}
+.marks{list-style:none;margin:.9cqi 0 0;padding:0}
+.marks li{position:relative;padding-left:3cqi;margin-bottom:1.1cqi}
+.marks li::before{content:'';position:absolute;left:.4cqi;top:.68em;width:1cqi;height:1cqi;transform:rotate(45deg);background:var(--gold);opacity:.8}
+.marks li:last-child{margin-bottom:0}
+.marks--airy li{margin-bottom:2.9cqi}
+.marks--airy li:last-child{margin-bottom:0}
+.line{display:flex;justify-content:space-between;align-items:baseline;gap:1.6cqi}
+.line span{font-family:var(--mono);font-size:1.8cqi;color:var(--ink-soft);white-space:nowrap;flex:none}
+
+/* skills manifest */
+.manifest{margin:0}
+.manifest div{display:grid;grid-template-columns:23cqi 1fr;gap:1.6cqi;padding:2.1cqi 0;border-bottom:1px solid rgba(120,96,50,.2)}
+.manifest div:last-child{border-bottom:0}
+.manifest.fill div{flex:1;align-items:center}
+.manifest dt{font-family:var(--mono);font-size:1.9cqi;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);padding-top:.4cqi}
+.manifest dd{margin:0}
+
+/* prologue */
+.prologue p{margin:0 0 1.7cqi;text-align:justify;hyphens:auto}
+.prologue p:first-of-type::first-letter{
+  float:left;font-family:var(--display);font-weight:700;font-size:11.5cqi;line-height:.78;
+  padding:.6cqi 1.6cqi .4cqi 0;color:var(--rubric);
+}
+.glance{margin:4.4cqi 0 0;border-top:1px solid rgba(120,96,50,.24);padding-top:2.6cqi;display:grid;gap:1.9cqi}
+.glance div{display:flex;justify-content:space-between;align-items:baseline;gap:2cqi}
+.glance dt{font-family:var(--mono);font-size:1.85cqi;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-soft)}
+.glance dd{margin:0;font-weight:600;text-align:right}
+
+/* colophon */
+.colophon{display:flex;flex-direction:column;align-items:center;text-align:center;justify-content:center;height:100%}
+.portrait{width:27cqi;height:27cqi;border-radius:50%;object-fit:cover;filter:sepia(.3) contrast(1.02);box-shadow:0 0 0 1px var(--gold),0 0 0 5px rgba(200,163,74,.18)}
+.colophon h1{font-family:var(--display);font-size:6.6cqi;font-weight:700;letter-spacing:.06em;margin:4.2cqi 0 0;line-height:1.12;text-transform:uppercase}
+.colophon .role{font-family:var(--mono);font-size:2cqi;letter-spacing:.26em;text-transform:uppercase;color:var(--ink-soft);margin:1.7cqi 0 0}
+.contact{margin:3.6cqi 0 0;font-family:var(--mono);font-size:2cqi;line-height:2.1;letter-spacing:.03em}
+.contact a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--vellum-2)}
+.contact a:hover{color:var(--rubric);border-color:var(--rubric)}
+
+/* ── covers ──────────────────────────────────────────────────── */
+.page--cover .sheet,.page--back .sheet{
+  background-color:#0A2833;
+  background-image:radial-gradient(120% 90% at 30% 8%,#17475A 0%,#0A2833 55%,#061921 100%);
+  color:var(--gold);
+}
+.page--back .sheet{background-image:radial-gradient(120% 90% at 70% 92%,#17475A 0%,#0A2833 55%,#061921 100%);color:rgba(233,222,194,.86)}
+.page--cover .sheet::before,.page--back .sheet::before{opacity:.15}
+.page--cover .sheet::after,.page--back .sheet::after{background:none}
+.cover{height:100%;display:flex;flex-direction:column;justify-content:space-between;text-align:center;padding:7cqi 6.5cqi 5.5cqi;position:relative}
+.cover::before{content:'';position:absolute;inset:3.2cqi;border:1px solid rgba(200,163,74,.42)}
+.cover::after{content:'';position:absolute;inset:4.3cqi;border:1px solid rgba(200,163,74,.2)}
+.cover > *{position:relative;z-index:1}
+.wave{display:block;width:100%;height:4.4cqi;opacity:.85}
+.wave--flip{transform:scaleY(-1)}
+.cover h1{font-family:var(--display);font-size:8.2cqi;font-weight:700;letter-spacing:.07em;line-height:1.1;margin:0;text-transform:uppercase;color:#E6C77A;text-shadow:0 1px 0 rgba(0,0,0,.5)}
+.cover .kicker{font-family:var(--mono);font-size:1.95cqi;letter-spacing:.4em;text-transform:uppercase;color:rgba(200,163,74,.7);margin:0 0 3cqi}
+.cover .sub{font-family:var(--body);font-style:italic;font-size:3.2cqi;color:rgba(233,222,194,.82);margin:2.8cqi 0 0;line-height:1.5}
+.cover .foot{font-family:var(--mono);font-size:1.85cqi;letter-spacing:.22em;text-transform:uppercase;color:rgba(200,163,74,.6);margin:3.4cqi 0 0}
+.cover .turn{font-family:var(--mono);font-size:1.8cqi;letter-spacing:.22em;text-transform:uppercase;color:rgba(233,222,194,.45);margin:1.4cqi 0 0}
+
+.back{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:8cqi 7cqi;gap:3.2cqi;position:relative}
+.back::before{content:'';position:absolute;inset:3.2cqi;border:1px solid rgba(200,163,74,.32)}
+.back > *{position:relative;z-index:1}
+.back h2{font-family:var(--display);font-size:4.4cqi;letter-spacing:.1em;font-weight:600;margin:0;text-transform:uppercase;color:#E6C77A}
+.back p{margin:0;font-size:2.8cqi}
+.back a{color:rgba(233,222,194,.9);text-decoration:none;border-bottom:1px solid rgba(200,163,74,.45);font-family:var(--mono);font-size:2.1cqi}
+.back a:hover{color:#E6C77A}
+.back .imprint{font-family:var(--mono);font-size:1.7cqi;letter-spacing:.18em;text-transform:uppercase;color:rgba(233,222,194,.42);line-height:2}
+
+/* ── chart (chapter navigation) ──────────────────────────────── */
+.controls{position:relative;z-index:2;width:min(100%,1180px);display:flex;align-items:center;justify-content:center;gap:clamp(8px,1.6vw,20px)}
+.arrow{
+  flex:none;width:38px;height:38px;border-radius:50%;background:transparent;
+  border:1px solid rgba(200,163,74,.38);color:var(--gold);cursor:pointer;
+  font-family:var(--display);font-size:16px;line-height:1;display:grid;place-items:center;
+  transition:background .2s,border-color .2s,opacity .2s;
+}
+.arrow:hover{background:rgba(200,163,74,.12);border-color:var(--gold)}
+.arrow[disabled]{opacity:.25;cursor:default}
+.chart{position:relative;flex:1;max-width:760px;overflow:hidden}
+.chart::before{content:'';position:absolute;left:6%;right:6%;top:9px;height:1px;background:linear-gradient(90deg,transparent,rgba(200,163,74,.35),rgba(200,163,74,.35),transparent)}
+.chart ul{list-style:none;display:flex;justify-content:space-between;margin:0;padding:0}
+.chart li{flex:1;display:flex;justify-content:center}
+.chart button{background:none;border:0;padding:2px 0 0;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:9px;width:100%}
+.star{width:9px;height:9px;transform:rotate(45deg);border:1px solid var(--gold-dim);background:var(--abyss);transition:background .25s,box-shadow .25s,border-color .25s,transform .25s}
+.chart button:hover .star{border-color:var(--gold);background:rgba(200,163,74,.35)}
+.chart button[aria-current="true"] .star{background:var(--gold);border-color:var(--gold);box-shadow:0 0 12px rgba(200,163,74,.85);transform:rotate(45deg) scale(1.28)}
+.chart span{font-family:var(--mono);font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:rgba(233,222,194,.4);transition:color .25s;white-space:nowrap}
+.chart button:hover span{color:rgba(233,222,194,.75)}
+.chart button[aria-current="true"] span{color:var(--gold)}
+
+.hint{position:relative;z-index:1;font-family:var(--mono);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:rgba(233,222,194,.3);text-align:center;margin:0}
+.ledger{position:relative;z-index:1;display:flex;gap:clamp(14px,3vw,30px);font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;flex-wrap:wrap;justify-content:center}
+.ledger a{color:rgba(233,222,194,.6);text-decoration:none;border-bottom:1px solid rgba(200,163,74,.3);padding-bottom:2px}
+.ledger a:hover{color:var(--gold);border-color:var(--gold)}
+
+@media (max-width:760px){
+  .chart span{display:none}
+  .chart::before{top:7px}
+  .arrow{width:34px;height:34px}
+  .stage{max-width:none}
+  .page--left .sheet::after,.page--right .sheet::after{background:linear-gradient(90deg,rgba(88,66,30,.16),transparent 7%)}
+}
+@media (prefers-reduced-motion:reduce){
+  #stars{animation:none;opacity:.8}
+  #book{transition:none}
+  *{transition-duration:.01ms!important}
+}
+</style>
+</head>
+<body>
+<div id="stars" aria-hidden="true"></div>
+
+<div class="stage">
+<div id="book">
+
+  <!-- 0 · FRONT COVER -->
+  <div class="page page--cover" data-density="hard">
+    <div class="sheet"><div class="cover">
+      <svg class="wave" viewBox="0 0 240 16" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0 12 Q 10 2 20 12 T 40 12 T 60 12 T 80 12 T 100 12 T 120 12 T 140 12 T 160 12 T 180 12 T 200 12 T 220 12 T 240 12" fill="none" stroke="#C8A34A" stroke-width="1.1"/>
+        <path d="M0 6 Q 10 -4 20 6 T 40 6 T 60 6 T 80 6 T 100 6 T 120 6 T 140 6 T 160 6 T 180 6 T 200 6 T 220 6 T 240 6" fill="none" stroke="#C8A34A" stroke-width="1.1" opacity=".4"/>
+      </svg>
+      <div>
+        <p class="kicker">Portfolio · MMXXVI</p>
+        <h1>Gayuth<br>Waidyaratne</h1>
+        <p class="sub">Distributed systems, backend engineering,<br>and everything built along the way.</p>
+      </div>
+      <div>
+        <svg class="wave wave--flip" viewBox="0 0 240 16" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M0 12 Q 10 2 20 12 T 40 12 T 60 12 T 80 12 T 100 12 T 120 12 T 140 12 T 160 12 T 180 12 T 200 12 T 220 12 T 240 12" fill="none" stroke="#C8A34A" stroke-width="1.1"/>
+          <path d="M0 6 Q 10 -4 20 6 T 40 6 T 60 6 T 80 6 T 100 6 T 120 6 T 140 6 T 160 6 T 180 6 T 200 6 T 220 6 T 240 6" fill="none" stroke="#C8A34A" stroke-width="1.1" opacity=".4"/>
+        </svg>
+        <p class="foot">Kaduwela · Sri Lanka</p>
+        <p class="turn">Turn the page →</p>
+      </div>
+    </div></div>
+  </div>
+
+  <!-- 1 · COLOPHON -->
+  <div class="page page--left">
+    <div class="sheet"><div class="leaf">
+      <div class="colophon">
+        <img class="portrait" src="data:image/jpeg;base64,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" alt="Gayuth Waidyaratne">
+        <h1>Gayuth<br>Waidyaratne</h1>
+        <p class="role">Computer Science Undergraduate</p>
+        <div class="contact">
+          <a href="mailto:gayuthdemika@gmail.com">gayuthdemika@gmail.com</a><br>
+          <a href="tel:+94728595801">+94 72 859 5801</a><br>
+          <a href="https://github.com/Gayuth-W" target="_blank" rel="noopener">github.com/Gayuth-W</a><br>
+          <a href="https://linkedin.com/in/gayuth-waidyaratne" target="_blank" rel="noopener">linkedin.com/in/gayuth-waidyaratne</a>
+        </div>
+      </div>
+    </div></div>
+  </div>
+
+  <!-- 2 · PROLOGUE -->
+  <div class="page page--right">
+    <div class="sheet"><div class="leaf">
+      <p class="ch__kicker">Prologue</p>
+      <header class="ch"><h2 class="ch__title">The Argument</h2></header>
+      <div class="rule"><i></i></div>
+      <div class="body prologue">
+        <div>
+        <p>High achieving Computer Science undergraduate (Year 3, SLIIT), Full Scholarship recipient, with extensive hands-on experience building scalable distributed systems.</p>
+        <p>Proven capability executing full-stack client deliverables and managing agile ceremonies. Passionate about engineering high-performance backend systems and writing deeply optimized, production-ready code.</p>
+        </div>
+        <dl class="glance">
+          <div><dt>Standing</dt><dd>CGPA 3.79 · Dean's List, all semesters</dd></div>
+          <div><dt>Competing</dt><dd>ICPC World Finalist, 2026</dd></div>
+          <div><dt>Serving</dt><dd>Secretary, SLIIT IEEE Computer Society</dd></div>
+        </dl>
+      </div>
+      <div class="folio"><span>Prologue</span><b>1</b></div>
+    </div></div>
+  </div>
+
+  <!-- 3 · EDUCATION -->
+  <div class="page page--left">
+    <div class="sheet"><div class="leaf">
+      <header class="ch"><span class="ch__num">I</span><h2 class="ch__title">Education</h2></header>
+      <div class="rule"><i></i></div>
+      <div class="body">
+        <article class="entry">
+          <div class="entry__head">
+            <h3 class="entry__title">Sri Lanka Institute of Information Technology</h3>
+            <span class="entry__date">Oct 2024 – Present</span>
+          </div>
+          <p class="entry__sub">BSc (Hons) in Computer Science</p>
+          <ul class="marks">
+            <li>Full Scholarship recipient · CGPA 3.79</li>
+            <li>Dean's List every semester to date (Y1S1 – Y2S2)</li>
+          </ul>
+        </article>
+        <article class="entry">
+          <div class="entry__head">
+            <h3 class="entry__title">Nalanda College, Colombo 10</h3>
+            <span class="entry__date">2012 – 2025</span>
+          </div>
+          <p class="entry__sub">Pearson Edexcel IAL — Physical Science</p>
+          <ul class="marks">
+            <li>4A* — Further Mathematics, Mathematics, Physics, Chemistry</li>
+          </ul>
+        </article>
+        <div>
+        <p class="sub-head">Certifications</p>
+        <ul class="marks">
+          <li>Supervised Machine Learning: Regression and Classification — Coursera</li>
+          <li>Advanced Learning Algorithms — Coursera</li>
+          <li>Unsupervised Learning, Recommenders, Reinforcement Learning — Coursera</li>
+        </ul>
+        </div>
+      </div>
+      <div class="folio"><span>Education</span><b>2</b></div>
+    </div></div>
+  </div>
+
+  <!-- 4 · SKILLS -->
+  <div class="page page--right">
+    <div class="sheet"><div class="leaf">
+      <header class="ch"><span class="ch__num">II</span><h2 class="ch__title">The Manifest</h2></header>
+      <div class="rule"><i></i></div>
+      <div class="body">
+        <dl class="manifest fill">
+          <div><dt>Languages</dt><dd>Java, Python, TypeScript, JavaScript, SQL</dd></div>
+          <div><dt>Backend</dt><dd>Spring Boot 3, Spring Security, JWT, REST APIs, gRPC</dd></div>
+          <div><dt>Frontend</dt><dd>Angular 17, React.js, Angular Material</dd></div>
+          <div><dt>Databases</dt><dd>MySQL, MongoDB, Redis</dd></div>
+          <div><dt>Cloud &amp; DevOps</dt><dd>Docker, GitHub Actions, CI/CD, Prometheus, Grafana</dd></div>
+          <div><dt>Other</dt><dd>OAuth2, OIDC, SCIM, API gateway patterns, microservices architecture</dd></div>
+        </dl>
+      </div>
+      <div class="folio"><span>Technical Skills</span><b>3</b></div>
+    </div></div>
+  </div>
+
+  <!-- 5 · EXPERIENCE -->
+  <div class="page page--left page--roomy">
+    <div class="sheet"><div class="leaf">
+      <header class="ch"><span class="ch__num">III</span><h2 class="ch__title">Experience</h2></header>
+      <div class="rule"><i></i></div>
+      <div class="body">
+        <article class="entry">
+          <div class="entry__head">
+            <h3 class="entry__title">Babul NGO — Hyderabad, India</h3>
+            <span class="entry__date">Dec 2025 – Jan 2026</span>
+          </div>
+          <p class="entry__sub">Full-Stack Developer (Onsite Volunteer)</p>
+          <ul class="marks marks--airy">
+            <li>Led end-to-end delivery of an interactive awareness platform using FastAPI and React — design, development, deployment, and pilot execution.</li>
+            <li>Built and maintained an admin dashboard to manage content, monitor usage, and support operational workflows.</li>
+            <li>Ran User Acceptance Testing with 30+ users; identified usability defects, documented issues, and validated fixes before release.</li>
+          </ul>
+        </article>
+      </div>
+      <div class="folio"><span>Work Experience</span><b>4</b></div>
+    </div></div>
+  </div>
+
+  <!-- 6 · PROJECTS I -->
+  <div class="page page--right">
+    <div class="sheet"><div class="leaf">
+      <header class="ch"><span class="ch__num">IV</span><h2 class="ch__title">Voyages</h2></header>
+      <div class="rule rule--tight"><i></i></div>
+      <div class="body">
+        <article class="entry">
+          <div class="entry__head">
+            <h3 class="entry__title">Sharedat <em>— Fault-Tolerant Distributed File Storage</em></h3>
+            <span class="entry__date">Jan – Apr 2026</span>
+          </div>
+          <p class="stack">Python · FastAPI · Streamlit</p>
+          <ul class="marks">
+            <li>Raft consensus, vector clocks, quorum-based replication, heartbeat failure recovery, and clock synchronisation via NTP and Cristian's algorithm across multi-node clusters.</li>
+          </ul>
+        </article>
+        <article class="entry">
+          <div class="entry__head">
+            <h3 class="entry__title">Raju++ <em>— Automatic Task Kill Switch</em></h3>
+            <span class="entry__date">Apr 2026</span>
+          </div>
+          <p class="stack">C · Flex · Bison</p>
+          <ul class="marks">
+            <li>A custom DSL for workflow automation with DAG-based dependency resolution, conditional execution, timeout constraints, and real-time shell/Python execution using POSIX process control.</li>
+          </ul>
+        </article>
+        <article class="entry">
+          <div class="entry__head">
+            <h3 class="entry__title">JNeon IT Hub <em>— Client Project</em></h3>
+            <span class="entry__date">Jan – Apr 2026</span>
+          </div>
+          <p class="stack">Spring Boot · React · LangChain · PostgreSQL · Supabase · OAuth 2.0</p>
+          <ul class="marks">
+            <li>Led Agile sprint ceremonies, coordinated cross-functional teams, and managed backlog prioritisation and delivery tracking in a production client environment.</li>
+          </ul>
+        </article>
+      </div>
+      <div class="folio"><span>Projects</span><b>5</b></div>
+    </div></div>
+  </div>
+
+  <!-- 7 · PROJECTS II -->
+  <div class="page page--left">
+    <div class="sheet"><div class="leaf">
+      <p class="ch__kicker">IV · Voyages</p>
+      <div class="rule rule--tight"><i></i></div>
+      <div class="body">
+        <article class="entry">
+          <div class="entry__head">
+            <h3 class="entry__title">Healix <em>— AI Digital Health Records</em></h3>
+            <span class="entry__date">Jan – Mar 2026</span>
+          </div>
+          <p class="stack">FastAPI · React · LangChain · PostgreSQL</p>
+          <ul class="marks">
+            <li>An OCR and NLP pipeline that extracts, normalises, and interprets lab results from unstructured documents using Google Document AI — cutting doctor review time by 25% and tripling patient comprehension.</li>
+          </ul>
+        </article>
+        <article class="entry">
+          <div class="entry__head">
+            <h3 class="entry__title">GradeMate <em>— A/L Paper-Marking RAG Chatbot</em></h3>
+            <span class="entry__date">Aug – Oct 2025</span>
+          </div>
+          <p class="stack">FastAPI · React · LangChain · MySQL</p>
+          <ul class="marks">
+            <li>A RAG grading system for semantic answer evaluation, reaching 95% grading accuracy and 1st Runner-Up at SLIIT Intellicon.</li>
+          </ul>
+        </article>
+        <article class="entry">
+          <div class="entry__head">
+            <h3 class="entry__title">Kalyani Jewellers <em>— Client Project</em></h3>
+            <span class="entry__date">Jul – Nov 2025</span>
+          </div>
+          <p class="stack">Spring Boot · TypeScript · React · MySQL</p>
+          <ul class="marks">
+            <li>Led a 4-member team and shipped the product with JWT authentication, cutting manual order handling by 70% through automated inventory updates and order-status workflows.</li>
+          </ul>
+        </article>
+      </div>
+      <div class="folio"><span>Projects</span><b>6</b></div>
+    </div></div>
+  </div>
+
+  <!-- 8 · PROJECTS III -->
+  <div class="page page--right page--roomy">
+    <div class="sheet"><div class="leaf">
+      <p class="ch__kicker">IV · Voyages</p>
+      <div class="rule rule--tight"><i></i></div>
+      <div class="body">
+        <article class="entry">
+          <div class="entry__head">
+            <h3 class="entry__title">Rental Application <em>— Student Rental Platform</em></h3>
+            <span class="entry__date">Jun – Aug 2025</span>
+          </div>
+          <p class="stack">Spring Boot · FastAPI · React · LangChain · MySQL · Pandas</p>
+          <ul class="marks">
+            <li>Natural-language-to-SQL search using vector embeddings for semantic matching, improving search accuracy by 85% and cutting query time by 60%.</li>
+          </ul>
+        </article>
+        <article class="entry">
+          <div class="entry__head">
+            <h3 class="entry__title">SatNav <em>— Navigation Glasses for the Visually Impaired</em></h3>
+            <span class="entry__date">Oct 2024 – Feb 2025</span>
+          </div>
+          <p class="stack">C++ · PHP · ESP32</p>
+          <ul class="marks">
+            <li>Google Maps API, GPS modules, and ESP32 microcontroller logic for real-time navigation, with a companion web interface for live location tracking; 50+ positive responses at the SLIIT Ideaspark Exhibition.</li>
+          </ul>
+        </article>
+      </div>
+      <div class="folio"><span>Projects</span><b>7</b></div>
+    </div></div>
+  </div>
+
+  <!-- 9 · AWARDS -->
+  <div class="page page--left page--roomy">
+    <div class="sheet"><div class="leaf">
+      <header class="ch"><span class="ch__num">V</span><h2 class="ch__title">Trophies</h2></header>
+      <div class="rule"><i></i></div>
+      <div class="body">
+        <div>
+          <p class="sub-head">Competitive programming</p>
+          <ul class="marks marks--airy">
+            <li><div class="line"><div><b>Gold Medalist</b>, Asia Peradeniya Regionals, ICPC — qualified for World Finals</div><span>2026</span></div></li>
+            <li><div class="line"><div>Participant, ICPC Asia West Championship, Mathura, India</div><span>2026</span></div></li>
+          </ul>
+        </div>
+        <div>
+          <p class="sub-head">Hackathons &amp; competitions</p>
+          <ul class="marks marks--airy">
+            <li><div class="line"><div>2nd Runner-Up, ProxyMaze by Torch Labs</div><span>2026</span></div></li>
+            <li><div class="line"><div>1st Runner-Up, Intellicon Hackathon, SLIIT AIESEC</div><span>2025</span></div></li>
+            <li><div class="line"><div>2nd Runner-Up, Mini Hackathon, MS Club of SLIIT</div><span>2025</span></div></li>
+            <li><div class="line"><div>Finalist, Algothon — CodeFest Tertiary Category, SLIIT</div><span>2025</span></div></li>
+            <li><div class="line"><div>Top 10, LeadSpring Startup Competition, SLIIT</div><span>2025</span></div></li>
+          </ul>
+        </div>
+      </div>
+      <div class="folio"><span>Awards &amp; Competitions</span><b>8</b></div>
+    </div></div>
+  </div>
+
+  <!-- 10 · LEADERSHIP -->
+  <div class="page page--right">
+    <div class="sheet"><div class="leaf">
+      <header class="ch"><span class="ch__num">VI</span><h2 class="ch__title">Crew</h2></header>
+      <div class="rule"><i></i></div>
+      <div class="body">
+        <ul class="marks">
+          <li><div class="line"><div><b>Secretary</b>, SLIIT IEEE Computer Society</div><span>2026 – 27</span></div></li>
+          <li><div class="line"><div><b>Assistant Treasurer</b>, SLIIT CS Student Community</div><span>2026 – 27</span></div></li>
+          <li><div class="line"><div>Subcommittee (Dev, Data Science &amp; Media), Mozilla Campus Club</div><span>2026 – 27</span></div></li>
+          <li><div class="line"><div><b>Secretary Team Lead</b>, IEEE CS CyberShield 5.0</div><span>2026</span></div></li>
+          <li><div class="line"><div>Committee Member, SLIIT CS Student Community</div><span>2025 – 26</span></div></li>
+          <li><div class="line"><div>Finance Team, IEEE CS SLIITXtreme 4.0</div><span>2025</span></div></li>
+          <li><div class="line"><div>Program Handling Team, IEEE RAS EMBED-X</div><span>2025</span></div></li>
+          <li><div class="line"><div>Finance Team, IEEE CS CyberShield 4.0</div><span>2025</span></div></li>
+          <li><div class="line"><div>Volunteer, Disrupt Asia — Green Impact Forum</div><span>2025</span></div></li>
+        </ul>
+        <div>
+        <p class="sub-head">Off the clock</p>
+        <ul class="marks">
+          <li>Shooting sport — colours-man</li>
+          <li>Basketball</li>
+        </ul>
+        </div>
+      </div>
+      <div class="folio"><span>Leadership &amp; Activities</span><b>9</b></div>
+    </div></div>
+  </div>
+
+  <!-- 11 · BACK COVER -->
+  <div class="page page--back" data-density="hard">
+    <div class="sheet"><div class="back">
+      <svg viewBox="0 0 100 100" width="26%" aria-hidden="true">
+        <g fill="none" stroke="#C8A34A" stroke-width="1">
+          <circle cx="50" cy="50" r="34" opacity=".45"/>
+          <circle cx="50" cy="50" r="27" opacity=".28"/>
+          <path d="M50 8 L56 44 L92 50 L56 56 L50 92 L44 56 L8 50 L44 44 Z" fill="#C8A34A" fill-opacity=".16"/>
+          <path d="M74 26 L54 46 M74 74 L54 54 M26 74 L46 54 M26 26 L46 46" opacity=".5"/>
+        </g>
+        <circle cx="50" cy="50" r="2.4" fill="#C8A34A"/>
+      </svg>
+      <h2>Fair winds</h2>
+      <p>References available upon request.</p>
+      <p><a href="mailto:gayuthdemika@gmail.com">gayuthdemika@gmail.com</a></p>
+      <p class="imprint">Set in Cinzel &amp; EB Garamond<br>Charted in Colombo · MMXXVI</p>
+    </div></div>
+  </div>
+
+</div>
+</div>
+
+<div class="controls">
+  <button class="arrow" id="prev" aria-label="Previous page">‹</button>
+  <nav class="chart" aria-label="Chapters"><ul id="chart"></ul></nav>
+  <button class="arrow" id="next" aria-label="Next page">›</button>
+</div>
+
+<p class="hint">Drag a page corner · or use ← →</p>
+
+<div class="ledger">
+  <a href="mailto:gayuthdemika@gmail.com">Email</a>
+  <a href="https://github.com/Gayuth-W" target="_blank" rel="noopener">GitHub</a>
+  <a href="https://linkedin.com/in/gayuth-waidyaratne" target="_blank" rel="noopener">LinkedIn</a>
+</div>
+
+<script>!function(t,e){"object"==typeof exports&&"undefined"!=typeof module?e(exports):"function"==typeof define&&define.amd?define(["exports"],e):e((t=t||self).St={})}(this,(function(t){"use strict";class e{constructor(t,e){this.state={angle:0,area:[],position:{x:0,y:0},hardAngle:0,hardDrawingAngle:0},this.createdDensity=e,this.nowDrawingDensity=this.createdDensity,this.render=t}setDensity(t){this.createdDensity=t,this.nowDrawingDensity=t}setDrawingDensity(t){this.nowDrawingDensity=t}setPosition(t){this.state.position=t}setAngle(t){this.state.angle=t}setArea(t){this.state.area=t}setHardDrawingAngle(t){this.state.hardDrawingAngle=t}setHardAngle(t){this.state.hardAngle=t,this.state.hardDrawingAngle=t}setOrientation(t){this.orientation=t}getDrawingDensity(){return this.nowDrawingDensity}getDensity(){return this.createdDensity}getHardAngle(){return this.state.hardAngle}}class i extends e{constructor(t,e,i){super(t,i),this.image=null,this.isLoad=!1,this.loadingAngle=0,this.image=new Image,this.image.src=e}draw(t){const e=this.render.getContext(),i=this.render.convertToGlobal(this.state.position),s=this.render.getRect().pageWidth,n=this.render.getRect().height;e.save(),e.translate(i.x,i.y),e.beginPath();for(let t of this.state.area)null!==t&&(t=this.render.convertToGlobal(t),e.lineTo(t.x-i.x,t.y-i.y));e.rotate(this.state.angle),e.clip(),this.isLoad?e.drawImage(this.image,0,0,s,n):this.drawLoader(e,{x:0,y:0},s,n),e.restore()}simpleDraw(t){const e=this.render.getRect(),i=this.render.getContext(),s=e.pageWidth,n=e.height,h=1===t?e.left+e.pageWidth:e.left,r=e.top;this.isLoad?i.drawImage(this.image,h,r,s,n):this.drawLoader(i,{x:h,y:r},s,n)}drawLoader(t,e,i,s){t.beginPath(),t.strokeStyle="rgb(200, 200, 200)",t.fillStyle="rgb(255, 255, 255)",t.lineWidth=1,t.rect(e.x+1,e.y+1,i-1,s-1),t.stroke(),t.fill();const n={x:e.x+i/2,y:e.y+s/2};t.beginPath(),t.lineWidth=10,t.arc(n.x,n.y,20,this.loadingAngle,3*Math.PI/2+this.loadingAngle),t.stroke(),t.closePath(),this.loadingAngle+=.07,this.loadingAngle>=2*Math.PI&&(this.loadingAngle=0)}load(){this.isLoad||(this.image.onload=()=>{this.isLoad=!0})}newTemporaryCopy(){return this}getTemporaryCopy(){return this}hideTemporaryCopy(){}}class s{constructor(t,e){this.pages=[],this.currentPageIndex=0,this.currentSpreadIndex=0,this.landscapeSpread=[],this.portraitSpread=[],this.render=e,this.app=t,this.currentPageIndex=0,this.isShowCover=this.app.getSettings().showCover}destroy(){this.pages=[]}createSpread(){this.landscapeSpread=[],this.portraitSpread=[];for(let t=0;t<this.pages.length;t++)this.portraitSpread.push([t]);let t=0;this.isShowCover&&(this.pages[0].setDensity("hard"),this.landscapeSpread.push([t]),t++);for(let e=t;e<this.pages.length;e+=2)e<this.pages.length-1?this.landscapeSpread.push([e,e+1]):(this.landscapeSpread.push([e]),this.pages[e].setDensity("hard"))}getSpread(){return"landscape"===this.render.getOrientation()?this.landscapeSpread:this.portraitSpread}getSpreadIndexByPage(t){const e=this.getSpread();for(let i=0;i<e.length;i++)if(t===e[i][0]||t===e[i][1])return i;return null}getPageCount(){return this.pages.length}getPages(){return this.pages}getPage(t){if(t>=0&&t<this.pages.length)return this.pages[t];throw new Error("Invalid page number")}nextBy(t){const e=this.pages.indexOf(t);return e<this.pages.length-1?this.pages[e+1]:null}prevBy(t){const e=this.pages.indexOf(t);return e>0?this.pages[e-1]:null}getFlippingPage(t){const e=this.currentSpreadIndex;if("portrait"===this.render.getOrientation())return 0===t?this.pages[e].newTemporaryCopy():this.pages[e-1];{const i=0===t?this.getSpread()[e+1]:this.getSpread()[e-1];return 1===i.length||0===t?this.pages[i[0]]:this.pages[i[1]]}}getBottomPage(t){const e=this.currentSpreadIndex;if("portrait"===this.render.getOrientation())return 0===t?this.pages[e+1]:this.pages[e-1];{const i=0===t?this.getSpread()[e+1]:this.getSpread()[e-1];return 1===i.length?this.pages[i[0]]:0===t?this.pages[i[1]]:this.pages[i[0]]}}showNext(){this.currentSpreadIndex<this.getSpread().length&&(this.currentSpreadIndex++,this.showSpread())}showPrev(){this.currentSpreadIndex>0&&(this.currentSpreadIndex--,this.showSpread())}getCurrentPageIndex(){return this.currentPageIndex}show(t=null){if(null===t&&(t=this.currentPageIndex),t<0||t>=this.pages.length)return;const e=this.getSpreadIndexByPage(t);null!==e&&(this.currentSpreadIndex=e,this.showSpread())}getCurrentSpreadIndex(){return this.currentSpreadIndex}setCurrentSpreadIndex(t){if(!(t>=0&&t<this.getSpread().length))throw new Error("Invalid page");this.currentSpreadIndex=t}showSpread(){const t=this.getSpread()[this.currentSpreadIndex];2===t.length?(this.render.setLeftPage(this.pages[t[0]]),this.render.setRightPage(this.pages[t[1]])):"landscape"===this.render.getOrientation()&&t[0]===this.pages.length-1?(this.render.setLeftPage(this.pages[t[0]]),this.render.setRightPage(null)):(this.render.setLeftPage(null),this.render.setRightPage(this.pages[t[0]])),this.currentPageIndex=t[0],this.app.updatePageIndex(this.currentPageIndex)}}class n extends s{constructor(t,e,i){super(t,e),this.imagesHref=i}load(){for(const t of this.imagesHref){const e=new i(this.render,t,"soft");e.load(),this.pages.push(e)}this.createSpread()}}class h{static GetDistanceBetweenTwoPoint(t,e){return null===t||null===e?1/0:Math.sqrt(Math.pow(e.x-t.x,2)+Math.pow(e.y-t.y,2))}static GetSegmentLength(t){return h.GetDistanceBetweenTwoPoint(t[0],t[1])}static GetAngleBetweenTwoLine(t,e){const i=t[0].y-t[1].y,s=e[0].y-e[1].y,n=t[1].x-t[0].x,h=e[1].x-e[0].x;return Math.acos((i*s+n*h)/(Math.sqrt(i*i+n*n)*Math.sqrt(s*s+h*h)))}static PointInRect(t,e){return null===e?null:e.x>=t.left&&e.x<=t.width+t.left&&e.y>=t.top&&e.y<=t.top+t.height?e:null}static GetRotatedPoint(t,e,i){return{x:t.x*Math.cos(i)+t.y*Math.sin(i)+e.x,y:t.y*Math.cos(i)-t.x*Math.sin(i)+e.y}}static LimitPointToCircle(t,e,i){if(h.GetDistanceBetweenTwoPoint(t,i)<=e)return i;const s=t.x,n=t.y,r=i.x,o=i.y;let a=Math.sqrt(Math.pow(e,2)*Math.pow(s-r,2)/(Math.pow(s-r,2)+Math.pow(n-o,2)))+s;i.x<0&&(a*=-1);let g=(a-s)*(n-o)/(s-r)+n;return s-r+n===0&&(g=e),{x:a,y:g}}static GetIntersectBetweenTwoSegment(t,e,i){return h.PointInRect(t,h.GetIntersectBeetwenTwoLine(e,i))}static GetIntersectBeetwenTwoLine(t,e){const i=t[0].y-t[1].y,s=e[0].y-e[1].y,n=t[1].x-t[0].x,h=e[1].x-e[0].x,r=t[0].x*t[1].y-t[1].x*t[0].y,o=e[0].x*e[1].y-e[1].x*e[0].y,a=i*o-s*r,g=n*o-h*r,l=-(r*h-o*n)/(i*h-s*n),d=-(i*o-s*r)/(i*h-s*n);if(isFinite(l)&&isFinite(d))return{x:l,y:d};if(Math.abs(a-g)<.1)throw new Error("Segment included");return null}static GetCordsFromTwoPoint(t,e){const i=Math.abs(t.x-e.x),s=Math.abs(t.y-e.y),n=Math.max(i,s),h=[t];function r(t,e,i,s,n){return e>t?t+n*(i/s):e<t?t-n*(i/s):t}for(let o=1;o<=n;o+=1)h.push({x:r(t.x,e.x,i,n,o),y:r(t.y,e.y,s,n,o)});return h}}class r extends e{constructor(t,e,i){super(t,i),this.copiedElement=null,this.temporaryCopy=null,this.isLoad=!1,this.element=e,this.element.classList.add("stf__item"),this.element.classList.add("--"+i)}newTemporaryCopy(){return"hard"===this.nowDrawingDensity?this:(null===this.temporaryCopy&&(this.copiedElement=this.element.cloneNode(!0),this.element.parentElement.appendChild(this.copiedElement),this.temporaryCopy=new r(this.render,this.copiedElement,this.nowDrawingDensity)),this.getTemporaryCopy())}getTemporaryCopy(){return this.temporaryCopy}hideTemporaryCopy(){null!==this.temporaryCopy&&(this.copiedElement.remove(),this.copiedElement=null,this.temporaryCopy=null)}draw(t){const e=t||this.nowDrawingDensity,i=this.render.convertToGlobal(this.state.position),s=this.render.getRect().pageWidth,n=this.render.getRect().height;this.element.classList.remove("--simple");const h=`\n            display: block;\n            z-index: ${this.element.style.zIndex};\n            left: 0;\n            top: 0;\n            width: ${s}px;\n            height: ${n}px;\n        `;"hard"===e?this.drawHard(h):this.drawSoft(i,h)}drawHard(t=""){const e=this.render.getRect().left+this.render.getRect().width/2,i=this.state.hardDrawingAngle,s=t+"\n                backface-visibility: hidden;\n                -webkit-backface-visibility: hidden;\n                clip-path: none;\n                -webkit-clip-path: none;\n            "+(0===this.orientation?`transform-origin: ${this.render.getRect().pageWidth}px 0; \n                   transform: translate3d(0, 0, 0) rotateY(${i}deg);`:`transform-origin: 0 0; \n                   transform: translate3d(${e}px, 0, 0) rotateY(${i}deg);`);this.element.style.cssText=s}drawSoft(t,e=""){let i="polygon( ";for(const t of this.state.area)if(null!==t){let e=1===this.render.getDirection()?{x:-t.x+this.state.position.x,y:t.y-this.state.position.y}:{x:t.x-this.state.position.x,y:t.y-this.state.position.y};e=h.GetRotatedPoint(e,{x:0,y:0},this.state.angle),i+=e.x+"px "+e.y+"px, "}i=i.slice(0,-2),i+=")";const s=e+`transform-origin: 0 0; clip-path: ${i}; -webkit-clip-path: ${i};`+(this.render.isSafari()&&0===this.state.angle?`transform: translate(${t.x}px, ${t.y}px);`:`transform: translate3d(${t.x}px, ${t.y}px, 0) rotate(${this.state.angle}rad);`);this.element.style.cssText=s}simpleDraw(t){const e=this.render.getRect(),i=e.pageWidth,s=e.height,n=1===t?e.left+e.pageWidth:e.left,h=e.top;this.element.classList.add("--simple"),this.element.style.cssText=`\n            position: absolute; \n            display: block; \n            height: ${s}px; \n            left: ${n}px; \n            top: ${h}px; \n            width: ${i}px; \n            z-index: ${this.render.getSettings().startZIndex+1};`}getElement(){return this.element}load(){this.isLoad=!0}setOrientation(t){super.setOrientation(t),this.element.classList.remove("--left","--right"),this.element.classList.add(1===t?"--right":"--left")}setDrawingDensity(t){this.element.classList.remove("--soft","--hard"),this.element.classList.add("--"+t),super.setDrawingDensity(t)}}class o extends s{constructor(t,e,i,s){super(t,e),this.element=i,this.pagesElement=s}load(){for(const t of this.pagesElement){const e=new r(this.render,t,"hard"===t.dataset.density?"hard":"soft");e.load(),this.pages.push(e)}this.createSpread()}}class a{constructor(t,e,i,s){this.direction=t,this.corner=e,this.topIntersectPoint=null,this.sideIntersectPoint=null,this.bottomIntersectPoint=null,this.pageWidth=parseInt(i,10),this.pageHeight=parseInt(s,10)}calc(t){try{return this.position=this.calcAngleAndPosition(t),this.calculateIntersectPoint(this.position),!0}catch(t){return!1}}getFlippingClipArea(){const t=[];let e=!1;return t.push(this.rect.topLeft),t.push(this.topIntersectPoint),null===this.sideIntersectPoint?e=!0:(t.push(this.sideIntersectPoint),null===this.bottomIntersectPoint&&(e=!1)),t.push(this.bottomIntersectPoint),(e||"bottom"===this.corner)&&t.push(this.rect.bottomLeft),t}getBottomClipArea(){const t=[];return t.push(this.topIntersectPoint),"top"===this.corner?t.push({x:this.pageWidth,y:0}):(null!==this.topIntersectPoint&&t.push({x:this.pageWidth,y:0}),t.push({x:this.pageWidth,y:this.pageHeight})),null!==this.sideIntersectPoint?h.GetDistanceBetweenTwoPoint(this.sideIntersectPoint,this.topIntersectPoint)>=10&&t.push(this.sideIntersectPoint):"top"===this.corner&&t.push({x:this.pageWidth,y:this.pageHeight}),t.push(this.bottomIntersectPoint),t.push(this.topIntersectPoint),t}getAngle(){return 0===this.direction?-this.angle:this.angle}getRect(){return this.rect}getPosition(){return this.position}getActiveCorner(){return 0===this.direction?this.rect.topLeft:this.rect.topRight}getDirection(){return this.direction}getFlippingProgress(){return Math.abs((this.position.x-this.pageWidth)/(2*this.pageWidth)*100)}getCorner(){return this.corner}getBottomPagePosition(){return 1===this.direction?{x:this.pageWidth,y:0}:{x:0,y:0}}getShadowStartPoint(){return"top"===this.corner?this.topIntersectPoint:null!==this.sideIntersectPoint?this.sideIntersectPoint:this.topIntersectPoint}getShadowAngle(){const t=h.GetAngleBetweenTwoLine(this.getSegmentToShadowLine(),[{x:0,y:0},{x:this.pageWidth,y:0}]);return 0===this.direction?t:Math.PI-t}calcAngleAndPosition(t){let e=t;if(this.updateAngleAndGeometry(e),e="top"===this.corner?this.checkPositionAtCenterLine(e,{x:0,y:0},{x:0,y:this.pageHeight}):this.checkPositionAtCenterLine(e,{x:0,y:this.pageHeight},{x:0,y:0}),Math.abs(e.x-this.pageWidth)<1&&Math.abs(e.y)<1)throw new Error("Point is too small");return e}updateAngleAndGeometry(t){this.angle=this.calculateAngle(t),this.rect=this.getPageRect(t)}calculateAngle(t){const e=this.pageWidth-t.x+1,i="bottom"===this.corner?this.pageHeight-t.y:t.y;let s=2*Math.acos(e/Math.sqrt(i*i+e*e));i<0&&(s=-s);const n=Math.PI-s;if(!isFinite(s)||n>=0&&n<.003)throw new Error("The G point is too small");return"bottom"===this.corner&&(s=-s),s}getPageRect(t){return"top"===this.corner?this.getRectFromBasePoint([{x:0,y:0},{x:this.pageWidth,y:0},{x:0,y:this.pageHeight},{x:this.pageWidth,y:this.pageHeight}],t):this.getRectFromBasePoint([{x:0,y:-this.pageHeight},{x:this.pageWidth,y:-this.pageHeight},{x:0,y:0},{x:this.pageWidth,y:0}],t)}getRectFromBasePoint(t,e){return{topLeft:this.getRotatedPoint(t[0],e),topRight:this.getRotatedPoint(t[1],e),bottomLeft:this.getRotatedPoint(t[2],e),bottomRight:this.getRotatedPoint(t[3],e)}}getRotatedPoint(t,e){return{x:t.x*Math.cos(this.angle)+t.y*Math.sin(this.angle)+e.x,y:t.y*Math.cos(this.angle)-t.x*Math.sin(this.angle)+e.y}}calculateIntersectPoint(t){const e={left:-1,top:-1,width:this.pageWidth+2,height:this.pageHeight+2};"top"===this.corner?(this.topIntersectPoint=h.GetIntersectBetweenTwoSegment(e,[t,this.rect.topRight],[{x:0,y:0},{x:this.pageWidth,y:0}]),this.sideIntersectPoint=h.GetIntersectBetweenTwoSegment(e,[t,this.rect.bottomLeft],[{x:this.pageWidth,y:0},{x:this.pageWidth,y:this.pageHeight}]),this.bottomIntersectPoint=h.GetIntersectBetweenTwoSegment(e,[this.rect.bottomLeft,this.rect.bottomRight],[{x:0,y:this.pageHeight},{x:this.pageWidth,y:this.pageHeight}])):(this.topIntersectPoint=h.GetIntersectBetweenTwoSegment(e,[this.rect.topLeft,this.rect.topRight],[{x:0,y:0},{x:this.pageWidth,y:0}]),this.sideIntersectPoint=h.GetIntersectBetweenTwoSegment(e,[t,this.rect.topLeft],[{x:this.pageWidth,y:0},{x:this.pageWidth,y:this.pageHeight}]),this.bottomIntersectPoint=h.GetIntersectBetweenTwoSegment(e,[this.rect.bottomLeft,this.rect.bottomRight],[{x:0,y:this.pageHeight},{x:this.pageWidth,y:this.pageHeight}]))}checkPositionAtCenterLine(t,e,i){let s=t;const n=h.LimitPointToCircle(e,this.pageWidth,s);s!==n&&(s=n,this.updateAngleAndGeometry(s));const r=Math.sqrt(Math.pow(this.pageWidth,2)+Math.pow(this.pageHeight,2));let o=this.rect.bottomRight,a=this.rect.topLeft;if("bottom"===this.corner&&(o=this.rect.topRight,a=this.rect.bottomLeft),o.x<=0){const t=h.LimitPointToCircle(i,r,a);t!==s&&(s=t,this.updateAngleAndGeometry(s))}return s}getSegmentToShadowLine(){const t=this.getShadowStartPoint();return[t,t!==this.sideIntersectPoint&&null!==this.sideIntersectPoint?this.sideIntersectPoint:this.bottomIntersectPoint]}}class g{constructor(t,e){this.flippingPage=null,this.bottomPage=null,this.calc=null,this.state="read",this.render=t,this.app=e}fold(t){this.setState("user_fold"),null===this.calc&&this.start(t),this.do(this.render.convertToPage(t))}flip(t){if(this.app.getSettings().disableFlipByClick&&!this.isPointOnCorners(t))return;if(null!==this.calc&&this.render.finishAnimation(),!this.start(t))return;const e=this.getBoundsRect();this.setState("flipping");const i=e.height/10,s="bottom"===this.calc.getCorner()?e.height-i:i,n="bottom"===this.calc.getCorner()?e.height:0;this.calc.calc({x:e.pageWidth-i,y:s}),this.animateFlippingTo({x:e.pageWidth-i,y:s},{x:-e.pageWidth,y:n},!0)}start(t){this.reset();const e=this.render.convertToBook(t),i=this.getBoundsRect(),s=this.getDirectionByPoint(e),n=e.y>=i.height/2?"bottom":"top";if(!this.checkDirection(s))return!1;try{if(this.flippingPage=this.app.getPageCollection().getFlippingPage(s),this.bottomPage=this.app.getPageCollection().getBottomPage(s),"landscape"===this.render.getOrientation())if(1===s){const t=this.app.getPageCollection().nextBy(this.flippingPage);null!==t&&this.flippingPage.getDensity()!==t.getDensity()&&(this.flippingPage.setDrawingDensity("hard"),t.setDrawingDensity("hard"))}else{const t=this.app.getPageCollection().prevBy(this.flippingPage);null!==t&&this.flippingPage.getDensity()!==t.getDensity()&&(this.flippingPage.setDrawingDensity("hard"),t.setDrawingDensity("hard"))}return this.render.setDirection(s),this.calc=new a(s,n,i.pageWidth.toString(10),i.height.toString(10)),!0}catch(t){return!1}}do(t){if(null!==this.calc&&this.calc.calc(t)){const t=this.calc.getFlippingProgress();this.bottomPage.setArea(this.calc.getBottomClipArea()),this.bottomPage.setPosition(this.calc.getBottomPagePosition()),this.bottomPage.setAngle(0),this.bottomPage.setHardAngle(0),this.flippingPage.setArea(this.calc.getFlippingClipArea()),this.flippingPage.setPosition(this.calc.getActiveCorner()),this.flippingPage.setAngle(this.calc.getAngle()),0===this.calc.getDirection()?this.flippingPage.setHardAngle(90*(200-2*t)/100):this.flippingPage.setHardAngle(-90*(200-2*t)/100),this.render.setPageRect(this.calc.getRect()),this.render.setBottomPage(this.bottomPage),this.render.setFlippingPage(this.flippingPage),this.render.setShadowData(this.calc.getShadowStartPoint(),this.calc.getShadowAngle(),t,this.calc.getDirection())}}flipToPage(t,e){const i=this.app.getPageCollection().getCurrentSpreadIndex(),s=this.app.getPageCollection().getSpreadIndexByPage(t);try{s>i&&(this.app.getPageCollection().setCurrentSpreadIndex(s-1),this.flipNext(e)),s<i&&(this.app.getPageCollection().setCurrentSpreadIndex(s+1),this.flipPrev(e))}catch(t){}}flipNext(t){this.flip({x:this.render.getRect().left+2*this.render.getRect().pageWidth-10,y:"top"===t?1:this.render.getRect().height-2})}flipPrev(t){this.flip({x:10,y:"top"===t?1:this.render.getRect().height-2})}stopMove(){if(null===this.calc)return;const t=this.calc.getPosition(),e=this.getBoundsRect(),i="bottom"===this.calc.getCorner()?e.height:0;t.x<=0?this.animateFlippingTo(t,{x:-e.pageWidth,y:i},!0):this.animateFlippingTo(t,{x:e.pageWidth,y:i},!1)}showCorner(t){if(!this.checkState("read","fold_corner"))return;const e=this.getBoundsRect(),i=e.pageWidth;if(this.isPointOnCorners(t))if(null===this.calc){if(!this.start(t))return;this.setState("fold_corner"),this.calc.calc({x:i-1,y:1});const s=50,n="bottom"===this.calc.getCorner()?e.height-1:1,h="bottom"===this.calc.getCorner()?e.height-s:s;this.animateFlippingTo({x:i-1,y:n},{x:i-s,y:h},!1,!1)}else this.do(this.render.convertToPage(t));else this.setState("read"),this.render.finishAnimation(),this.stopMove()}animateFlippingTo(t,e,i,s=!0){const n=h.GetCordsFromTwoPoint(t,e),r=[];for(const t of n)r.push(()=>this.do(t));const o=this.getAnimationDuration(n.length);this.render.startAnimation(r,o,()=>{this.calc&&(i&&(1===this.calc.getDirection()?this.app.turnToPrevPage():this.app.turnToNextPage()),s&&(this.render.setBottomPage(null),this.render.setFlippingPage(null),this.render.clearShadow(),this.setState("read"),this.reset()))})}getCalculation(){return this.calc}getState(){return this.state}setState(t){this.state!==t&&(this.app.updateState(t),this.state=t)}getDirectionByPoint(t){const e=this.getBoundsRect();if("portrait"===this.render.getOrientation()){if(t.x-e.pageWidth<=e.width/5)return 1}else if(t.x<e.width/2)return 1;return 0}getAnimationDuration(t){const e=this.app.getSettings().flippingTime;return t>=1e3?e:t/1e3*e}checkDirection(t){return 0===t?this.app.getCurrentPageIndex()<this.app.getPageCount()-1:this.app.getCurrentPageIndex()>=1}reset(){this.calc=null,this.flippingPage=null,this.bottomPage=null}getBoundsRect(){return this.render.getRect()}checkState(...t){for(const e of t)if(this.state===e)return!0;return!1}isPointOnCorners(t){const e=this.getBoundsRect(),i=e.pageWidth,s=Math.sqrt(Math.pow(i,2)+Math.pow(e.height,2))/5,n=this.render.convertToBook(t);return n.x>0&&n.y>0&&n.x<e.width&&n.y<e.height&&(n.x<s||n.x>e.width-s)&&(n.y<s||n.y>e.height-s)}}class l{constructor(t,e){this.leftPage=null,this.rightPage=null,this.flippingPage=null,this.bottomPage=null,this.direction=null,this.orientation=null,this.shadow=null,this.animation=null,this.pageRect=null,this.boundsRect=null,this.timer=0,this.safari=!1,this.setting=e,this.app=t;const i=new RegExp("Version\\/[\\d\\.]+.*Safari/");this.safari=null!==i.exec(window.navigator.userAgent)}render(t){if(null!==this.animation){const e=Math.round((t-this.animation.startedAt)/this.animation.durationFrame);e<this.animation.frames.length?this.animation.frames[e]():(this.animation.onAnimateEnd(),this.animation=null)}this.timer=t,this.drawFrame()}start(){this.update();const t=e=>{this.render(e),requestAnimationFrame(t)};requestAnimationFrame(t)}startAnimation(t,e,i){this.finishAnimation(),this.animation={frames:t,duration:e,durationFrame:e/t.length,onAnimateEnd:i,startedAt:this.timer}}finishAnimation(){null!==this.animation&&(this.animation.frames[this.animation.frames.length-1](),null!==this.animation.onAnimateEnd&&this.animation.onAnimateEnd()),this.animation=null}update(){this.boundsRect=null;const t=this.calculateBoundsRect();this.orientation!==t&&(this.orientation=t,this.app.updateOrientation(t))}calculateBoundsRect(){let t="landscape";const e=this.getBlockWidth(),i=e/2,s=this.getBlockHeight()/2,n=this.setting.width/this.setting.height;let h=this.setting.width,r=this.setting.height,o=i-h;return"stretch"===this.setting.size?(e<2*this.setting.minWidth&&this.app.getSettings().usePortrait&&(t="portrait"),h="portrait"===t?this.getBlockWidth():this.getBlockWidth()/2,h>this.setting.maxWidth&&(h=this.setting.maxWidth),r=h/n,r>this.getBlockHeight()&&(r=this.getBlockHeight(),h=r*n),o="portrait"===t?i-h/2-h:i-h):e<2*h&&this.app.getSettings().usePortrait&&(t="portrait",o=i-h/2-h),this.boundsRect={left:o,top:s-r/2,width:2*h,height:r,pageWidth:h},t}setShadowData(t,e,i,s){if(!this.app.getSettings().drawShadow)return;const n=100*this.getSettings().maxShadowOpacity;this.shadow={pos:t,angle:e,width:3*this.getRect().pageWidth/4*i/100,opacity:(100-i)*n/100/100,direction:s,progress:2*i}}clearShadow(){this.shadow=null}getBlockWidth(){return this.app.getUI().getDistElement().offsetWidth}getBlockHeight(){return this.app.getUI().getDistElement().offsetHeight}getDirection(){return this.direction}getRect(){return null===this.boundsRect&&this.calculateBoundsRect(),this.boundsRect}getSettings(){return this.app.getSettings()}getOrientation(){return this.orientation}setPageRect(t){this.pageRect=t}setDirection(t){this.direction=t}setRightPage(t){null!==t&&t.setOrientation(1),this.rightPage=t}setLeftPage(t){null!==t&&t.setOrientation(0),this.leftPage=t}setBottomPage(t){null!==t&&t.setOrientation(1===this.direction?0:1),this.bottomPage=t}setFlippingPage(t){null!==t&&t.setOrientation(0===this.direction&&"portrait"!==this.orientation?0:1),this.flippingPage=t}convertToBook(t){const e=this.getRect();return{x:t.x-e.left,y:t.y-e.top}}isSafari(){return this.safari}convertToPage(t,e){e||(e=this.direction);const i=this.getRect();return{x:0===e?t.x-i.left-i.width/2:i.width/2-t.x+i.left,y:t.y-i.top}}convertToGlobal(t,e){if(e||(e=this.direction),null==t)return null;const i=this.getRect();return{x:0===e?t.x+i.left+i.width/2:i.width/2-t.x+i.left,y:t.y+i.top}}convertRectToGlobal(t,e){return e||(e=this.direction),{topLeft:this.convertToGlobal(t.topLeft,e),topRight:this.convertToGlobal(t.topRight,e),bottomLeft:this.convertToGlobal(t.bottomLeft,e),bottomRight:this.convertToGlobal(t.bottomRight,e)}}}class d extends l{constructor(t,e,i){super(t,e),this.canvas=i,this.ctx=i.getContext("2d")}getContext(){return this.ctx}reload(){}drawFrame(){this.clear(),"portrait"!==this.orientation&&null!=this.leftPage&&this.leftPage.simpleDraw(0),null!=this.rightPage&&this.rightPage.simpleDraw(1),null!=this.bottomPage&&this.bottomPage.draw(),this.drawBookShadow(),null!=this.flippingPage&&this.flippingPage.draw(),null!=this.shadow&&(this.drawOuterShadow(),this.drawInnerShadow());const t=this.getRect();"portrait"===this.orientation&&(this.ctx.beginPath(),this.ctx.rect(t.left+t.pageWidth,t.top,t.width,t.height),this.ctx.clip())}drawBookShadow(){const t=this.getRect();this.ctx.save(),this.ctx.beginPath();const e=t.width/20;this.ctx.rect(t.left,t.top,t.width,t.height);const i={x:t.left+t.width/2-e/2,y:0};this.ctx.translate(i.x,i.y);const s=this.ctx.createLinearGradient(0,0,e,0);s.addColorStop(0,"rgba(0, 0, 0, 0)"),s.addColorStop(.4,"rgba(0, 0, 0, 0.2)"),s.addColorStop(.49,"rgba(0, 0, 0, 0.1)"),s.addColorStop(.5,"rgba(0, 0, 0, 0.5)"),s.addColorStop(.51,"rgba(0, 0, 0, 0.4)"),s.addColorStop(1,"rgba(0, 0, 0, 0)"),this.ctx.clip(),this.ctx.fillStyle=s,this.ctx.fillRect(0,0,e,2*t.height),this.ctx.restore()}drawOuterShadow(){const t=this.getRect();this.ctx.save(),this.ctx.beginPath(),this.ctx.rect(t.left,t.top,t.width,t.height);const e=this.convertToGlobal({x:this.shadow.pos.x,y:this.shadow.pos.y});this.ctx.translate(e.x,e.y),this.ctx.rotate(Math.PI+this.shadow.angle+Math.PI/2);const i=this.ctx.createLinearGradient(0,0,this.shadow.width,0);0===this.shadow.direction?(this.ctx.translate(0,-100),i.addColorStop(0,"rgba(0, 0, 0, "+this.shadow.opacity+")"),i.addColorStop(1,"rgba(0, 0, 0, 0)")):(this.ctx.translate(-this.shadow.width,-100),i.addColorStop(0,"rgba(0, 0, 0, 0)"),i.addColorStop(1,"rgba(0, 0, 0, "+this.shadow.opacity+")")),this.ctx.clip(),this.ctx.fillStyle=i,this.ctx.fillRect(0,0,this.shadow.width,2*t.height),this.ctx.restore()}drawInnerShadow(){const t=this.getRect();this.ctx.save(),this.ctx.beginPath();const e=this.convertToGlobal({x:this.shadow.pos.x,y:this.shadow.pos.y}),i=this.convertRectToGlobal(this.pageRect);this.ctx.moveTo(i.topLeft.x,i.topLeft.y),this.ctx.lineTo(i.topRight.x,i.topRight.y),this.ctx.lineTo(i.bottomRight.x,i.bottomRight.y),this.ctx.lineTo(i.bottomLeft.x,i.bottomLeft.y),this.ctx.translate(e.x,e.y),this.ctx.rotate(Math.PI+this.shadow.angle+Math.PI/2);const s=3*this.shadow.width/4,n=this.ctx.createLinearGradient(0,0,s,0);0===this.shadow.direction?(this.ctx.translate(-s,-100),n.addColorStop(1,"rgba(0, 0, 0, "+this.shadow.opacity+")"),n.addColorStop(.9,"rgba(0, 0, 0, 0.05)"),n.addColorStop(.7,"rgba(0, 0, 0, "+this.shadow.opacity+")"),n.addColorStop(0,"rgba(0, 0, 0, 0)")):(this.ctx.translate(0,-100),n.addColorStop(0,"rgba(0, 0, 0, "+this.shadow.opacity+")"),n.addColorStop(.1,"rgba(0, 0, 0, 0.05)"),n.addColorStop(.3,"rgba(0, 0, 0, "+this.shadow.opacity+")"),n.addColorStop(1,"rgba(0, 0, 0, 0)")),this.ctx.clip(),this.ctx.fillStyle=n,this.ctx.fillRect(0,0,s,2*t.height),this.ctx.restore()}clear(){this.ctx.fillStyle="white",this.ctx.fillRect(0,0,this.canvas.width,this.canvas.height)}}class p{constructor(t,e,i){this.touchPoint=null,this.swipeTimeout=250,this.onResize=()=>{this.update()},this.onMouseDown=t=>{if(this.checkTarget(t.target)){const e=this.getMousePos(t.clientX,t.clientY);this.app.startUserTouch(e),t.preventDefault()}},this.onTouchStart=t=>{if(this.checkTarget(t.target)&&t.changedTouches.length>0){const e=t.changedTouches[0],i=this.getMousePos(e.clientX,e.clientY);this.touchPoint={point:i,time:Date.now()},setTimeout(()=>{null!==this.touchPoint&&this.app.startUserTouch(i)},this.swipeTimeout),this.app.getSettings().mobileScrollSupport||t.preventDefault()}},this.onMouseUp=t=>{const e=this.getMousePos(t.clientX,t.clientY);this.app.userStop(e)},this.onMouseMove=t=>{const e=this.getMousePos(t.clientX,t.clientY);this.app.userMove(e,!1)},this.onTouchMove=t=>{if(t.changedTouches.length>0){const e=t.changedTouches[0],i=this.getMousePos(e.clientX,e.clientY);this.app.getSettings().mobileScrollSupport?(null!==this.touchPoint&&(Math.abs(this.touchPoint.point.x-i.x)>10||"read"!==this.app.getState())&&t.cancelable&&this.app.userMove(i,!0),"read"!==this.app.getState()&&t.preventDefault()):this.app.userMove(i,!0)}},this.onTouchEnd=t=>{if(t.changedTouches.length>0){const e=t.changedTouches[0],i=this.getMousePos(e.clientX,e.clientY);let s=!1;if(null!==this.touchPoint){const t=i.x-this.touchPoint.point.x,e=Math.abs(i.y-this.touchPoint.point.y);Math.abs(t)>this.swipeDistance&&e<2*this.swipeDistance&&Date.now()-this.touchPoint.time<this.swipeTimeout&&(t>0?this.app.flipPrev(this.touchPoint.point.y<this.app.getRender().getRect().height/2?"top":"bottom"):this.app.flipNext(this.touchPoint.point.y<this.app.getRender().getRect().height/2?"top":"bottom"),s=!0),this.touchPoint=null}this.app.userStop(i,s)}},this.parentElement=t,t.classList.add("stf__parent"),t.insertAdjacentHTML("afterbegin",'<div class="stf__wrapper"></div>'),this.wrapper=t.querySelector(".stf__wrapper"),this.app=e;const s=this.app.getSettings().usePortrait?1:2;t.style.minWidth=i.minWidth*s+"px",t.style.minHeight=i.minHeight+"px","fixed"===i.size&&(t.style.minWidth=i.width*s+"px",t.style.minHeight=i.height+"px"),i.autoSize&&(t.style.width="100%",t.style.maxWidth=2*i.maxWidth+"px"),t.style.display="block",window.addEventListener("resize",this.onResize,!1),this.swipeDistance=i.swipeDistance}destroy(){this.app.getSettings().useMouseEvents&&this.removeHandlers(),this.distElement.remove(),this.wrapper.remove()}getDistElement(){return this.distElement}getWrapper(){return this.wrapper}setOrientationStyle(t){this.wrapper.classList.remove("--portrait","--landscape"),"portrait"===t?(this.app.getSettings().autoSize&&(this.wrapper.style.paddingBottom=this.app.getSettings().height/this.app.getSettings().width*100+"%"),this.wrapper.classList.add("--portrait")):(this.app.getSettings().autoSize&&(this.wrapper.style.paddingBottom=this.app.getSettings().height/(2*this.app.getSettings().width)*100+"%"),this.wrapper.classList.add("--landscape")),this.update()}removeHandlers(){window.removeEventListener("resize",this.onResize),this.distElement.removeEventListener("mousedown",this.onMouseDown),this.distElement.removeEventListener("touchstart",this.onTouchStart),window.removeEventListener("mousemove",this.onMouseMove),window.removeEventListener("touchmove",this.onTouchMove),window.removeEventListener("mouseup",this.onMouseUp),window.removeEventListener("touchend",this.onTouchEnd)}setHandlers(){window.addEventListener("resize",this.onResize,!1),this.app.getSettings().useMouseEvents&&(this.distElement.addEventListener("mousedown",this.onMouseDown),this.distElement.addEventListener("touchstart",this.onTouchStart),window.addEventListener("mousemove",this.onMouseMove),window.addEventListener("touchmove",this.onTouchMove,{passive:!this.app.getSettings().mobileScrollSupport}),window.addEventListener("mouseup",this.onMouseUp),window.addEventListener("touchend",this.onTouchEnd))}getMousePos(t,e){const i=this.distElement.getBoundingClientRect();return{x:t-i.left,y:e-i.top}}checkTarget(t){return!this.app.getSettings().clickEventForward||!["a","button"].includes(t.tagName.toLowerCase())}}class c extends p{constructor(t,e,i,s){super(t,e,i),this.wrapper.insertAdjacentHTML("afterbegin",'<div class="stf__block"></div>'),this.distElement=t.querySelector(".stf__block"),this.items=s;for(const t of s)this.distElement.appendChild(t);this.setHandlers()}clear(){for(const t of this.items)this.parentElement.appendChild(t)}updateItems(t){this.removeHandlers(),this.distElement.innerHTML="";for(const e of t)this.distElement.appendChild(e);this.items=t,this.setHandlers()}update(){this.app.getRender().update()}}class u extends p{constructor(t,e,i){super(t,e,i),this.wrapper.innerHTML='<canvas class="stf__canvas"></canvas>',this.canvas=t.querySelectorAll("canvas")[0],this.distElement=this.canvas,this.resizeCanvas(),this.setHandlers()}resizeCanvas(){const t=getComputedStyle(this.canvas),e=parseInt(t.getPropertyValue("width"),10),i=parseInt(t.getPropertyValue("height"),10);this.canvas.width=e,this.canvas.height=i}getCanvas(){return this.canvas}update(){this.resizeCanvas(),this.app.getRender().update()}}class w extends l{constructor(t,e,i){super(t,e),this.outerShadow=null,this.innerShadow=null,this.hardShadow=null,this.hardInnerShadow=null,this.element=i,this.createShadows()}createShadows(){this.element.insertAdjacentHTML("beforeend",'<div class="stf__outerShadow"></div>\n             <div class="stf__innerShadow"></div>\n             <div class="stf__hardShadow"></div>\n             <div class="stf__hardInnerShadow"></div>'),this.outerShadow=this.element.querySelector(".stf__outerShadow"),this.innerShadow=this.element.querySelector(".stf__innerShadow"),this.hardShadow=this.element.querySelector(".stf__hardShadow"),this.hardInnerShadow=this.element.querySelector(".stf__hardInnerShadow")}clearShadow(){super.clearShadow(),this.outerShadow.style.cssText="display: none",this.innerShadow.style.cssText="display: none",this.hardShadow.style.cssText="display: none",this.hardInnerShadow.style.cssText="display: none"}reload(){this.element.querySelector(".stf__outerShadow")||this.createShadows()}drawHardInnerShadow(){const t=this.getRect(),e=this.shadow.progress>100?200-this.shadow.progress:this.shadow.progress;let i=(100-e)*(2.5*t.pageWidth)/100+20;i>t.pageWidth&&(i=t.pageWidth);let s=`\n            display: block;\n            z-index: ${(this.getSettings().startZIndex+5).toString(10)};\n            width: ${i}px;\n            height: ${t.height}px;\n            background: linear-gradient(to right,\n                rgba(0, 0, 0, ${this.shadow.opacity*e/100}) 5%,\n                rgba(0, 0, 0, 0) 100%);\n            left: ${t.left+t.width/2}px;\n            transform-origin: 0 0;\n        `;s+=0===this.getDirection()&&this.shadow.progress>100||1===this.getDirection()&&this.shadow.progress<=100?"transform: translate3d(0, 0, 0);":"transform: translate3d(0, 0, 0) rotateY(180deg);",this.hardInnerShadow.style.cssText=s}drawHardOuterShadow(){const t=this.getRect();let e=(100-(this.shadow.progress>100?200-this.shadow.progress:this.shadow.progress))*(2.5*t.pageWidth)/100+20;e>t.pageWidth&&(e=t.pageWidth);let i=`\n            display: block;\n            z-index: ${(this.getSettings().startZIndex+4).toString(10)};\n            width: ${e}px;\n            height: ${t.height}px;\n            background: linear-gradient(to left, rgba(0, 0, 0, ${this.shadow.opacity}) 5%, rgba(0, 0, 0, 0) 100%);\n            left: ${t.left+t.width/2}px;\n            transform-origin: 0 0;\n        `;i+=0===this.getDirection()&&this.shadow.progress>100||1===this.getDirection()&&this.shadow.progress<=100?"transform: translate3d(0, 0, 0) rotateY(180deg);":"transform: translate3d(0, 0, 0);",this.hardShadow.style.cssText=i}drawInnerShadow(){const t=this.getRect(),e=3*this.shadow.width/4,i=0===this.getDirection()?e:0,s=0===this.getDirection()?"to left":"to right",n=this.convertToGlobal(this.shadow.pos),r=this.shadow.angle+3*Math.PI/2,o=[this.pageRect.topLeft,this.pageRect.topRight,this.pageRect.bottomRight,this.pageRect.bottomLeft];let a="polygon( ";for(const t of o){let e=1===this.getDirection()?{x:-t.x+this.shadow.pos.x,y:t.y-this.shadow.pos.y}:{x:t.x-this.shadow.pos.x,y:t.y-this.shadow.pos.y};e=h.GetRotatedPoint(e,{x:i,y:100},r),a+=e.x+"px "+e.y+"px, "}a=a.slice(0,-2),a+=")";const g=`\n            display: block;\n            z-index: ${(this.getSettings().startZIndex+10).toString(10)};\n            width: ${e}px;\n            height: ${2*t.height}px;\n            background: linear-gradient(${s},\n                rgba(0, 0, 0, ${this.shadow.opacity}) 5%,\n                rgba(0, 0, 0, 0.05) 15%,\n                rgba(0, 0, 0, ${this.shadow.opacity}) 35%,\n                rgba(0, 0, 0, 0) 100%);\n            transform-origin: ${i}px 100px;\n            transform: translate3d(${n.x-i}px, ${n.y-100}px, 0) rotate(${r}rad);\n            clip-path: ${a};\n            -webkit-clip-path: ${a};\n        `;this.innerShadow.style.cssText=g}drawOuterShadow(){const t=this.getRect(),e=this.convertToGlobal({x:this.shadow.pos.x,y:this.shadow.pos.y}),i=this.shadow.angle+3*Math.PI/2,s=1===this.getDirection()?this.shadow.width:0,n=0===this.getDirection()?"to right":"to left",r=[{x:0,y:0},{x:t.pageWidth,y:0},{x:t.pageWidth,y:t.height},{x:0,y:t.height}];let o="polygon( ";for(const t of r)if(null!==t){let e=1===this.getDirection()?{x:-t.x+this.shadow.pos.x,y:t.y-this.shadow.pos.y}:{x:t.x-this.shadow.pos.x,y:t.y-this.shadow.pos.y};e=h.GetRotatedPoint(e,{x:s,y:100},i),o+=e.x+"px "+e.y+"px, "}o=o.slice(0,-2),o+=")";const a=`\n            display: block;\n            z-index: ${(this.getSettings().startZIndex+10).toString(10)};\n            width: ${this.shadow.width}px;\n            height: ${2*t.height}px;\n            background: linear-gradient(${n}, rgba(0, 0, 0, ${this.shadow.opacity}), rgba(0, 0, 0, 0));\n            transform-origin: ${s}px 100px;\n            transform: translate3d(${e.x-s}px, ${e.y-100}px, 0) rotate(${i}rad);\n            clip-path: ${o};\n            -webkit-clip-path: ${o};\n        `;this.outerShadow.style.cssText=a}drawLeftPage(){"portrait"!==this.orientation&&null!==this.leftPage&&(1===this.direction&&null!==this.flippingPage&&"hard"===this.flippingPage.getDrawingDensity()?(this.leftPage.getElement().style.zIndex=(this.getSettings().startZIndex+5).toString(10),this.leftPage.setHardDrawingAngle(180+this.flippingPage.getHardAngle()),this.leftPage.draw(this.flippingPage.getDrawingDensity())):this.leftPage.simpleDraw(0))}drawRightPage(){null!==this.rightPage&&(0===this.direction&&null!==this.flippingPage&&"hard"===this.flippingPage.getDrawingDensity()?(this.rightPage.getElement().style.zIndex=(this.getSettings().startZIndex+5).toString(10),this.rightPage.setHardDrawingAngle(180+this.flippingPage.getHardAngle()),this.rightPage.draw(this.flippingPage.getDrawingDensity())):this.rightPage.simpleDraw(1))}drawBottomPage(){if(null===this.bottomPage)return;const t=null!=this.flippingPage?this.flippingPage.getDrawingDensity():null;"portrait"===this.orientation&&1===this.direction||(this.bottomPage.getElement().style.zIndex=(this.getSettings().startZIndex+3).toString(10),this.bottomPage.draw(t))}drawFrame(){this.clear(),this.drawLeftPage(),this.drawRightPage(),this.drawBottomPage(),null!=this.flippingPage&&(this.flippingPage.getElement().style.zIndex=(this.getSettings().startZIndex+5).toString(10),this.flippingPage.draw()),null!=this.shadow&&null!==this.flippingPage&&("soft"===this.flippingPage.getDrawingDensity()?(this.drawOuterShadow(),this.drawInnerShadow()):(this.drawHardOuterShadow(),this.drawHardInnerShadow()))}clear(){for(const t of this.app.getPageCollection().getPages())t!==this.leftPage&&t!==this.rightPage&&t!==this.flippingPage&&t!==this.bottomPage&&(t.getElement().style.cssText="display: none"),t.getTemporaryCopy()!==this.flippingPage&&t.hideTemporaryCopy()}update(){super.update(),null!==this.rightPage&&this.rightPage.setOrientation(1),null!==this.leftPage&&this.leftPage.setOrientation(0)}}class x{constructor(){this._default={startPage:0,size:"fixed",width:0,height:0,minWidth:0,maxWidth:0,minHeight:0,maxHeight:0,drawShadow:!0,flippingTime:1e3,usePortrait:!0,startZIndex:0,autoSize:!0,maxShadowOpacity:1,showCover:!1,mobileScrollSupport:!0,swipeDistance:30,clickEventForward:!0,useMouseEvents:!0,showPageCorners:!0,disableFlipByClick:!1}}getSettings(t){const e=this._default;if(Object.assign(e,t),"stretch"!==e.size&&"fixed"!==e.size)throw new Error('Invalid size type. Available only "fixed" and "stretch" value');if(e.width<=0||e.height<=0)throw new Error("Invalid width or height");if(e.flippingTime<=0)throw new Error("Invalid flipping time");return"stretch"===e.size?(e.minWidth<=0&&(e.minWidth=100),e.maxWidth<e.minWidth&&(e.maxWidth=2e3),e.minHeight<=0&&(e.minHeight=100),e.maxHeight<e.minHeight&&(e.maxHeight=2e3)):(e.minWidth=e.width,e.maxWidth=e.width,e.minHeight=e.height,e.maxHeight=e.height),e}}!function(t,e){void 0===e&&(e={});var i=e.insertAt;if(t&&"undefined"!=typeof document){var s=document.head||document.getElementsByTagName("head")[0],n=document.createElement("style");n.type="text/css","top"===i&&s.firstChild?s.insertBefore(n,s.firstChild):s.appendChild(n),n.styleSheet?n.styleSheet.cssText=t:n.appendChild(document.createTextNode(t))}}(".stf__parent {\n  position: relative;\n  display: block;\n  box-sizing: border-box;\n  transform: translateZ(0);\n\n  -ms-touch-action: pan-y;\n  touch-action: pan-y;\n}\n\n.sft__wrapper {\n  position: relative;\n  width: 100%;\n  box-sizing: border-box;\n}\n\n.stf__parent canvas {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  left: 0;\n  top: 0;\n}\n\n.stf__block {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  box-sizing: border-box;\n  perspective: 2000px;\n}\n\n.stf__item {\n  display: none;\n  position: absolute;\n  transform-style: preserve-3d;\n}\n\n.stf__outerShadow {\n  position: absolute;\n  left: 0;\n  top: 0;\n}\n\n.stf__innerShadow {\n  position: absolute;\n  left: 0;\n  top: 0;\n}\n\n.stf__hardShadow {\n  position: absolute;\n  left: 0;\n  top: 0;\n}\n\n.stf__hardInnerShadow {\n  position: absolute;\n  left: 0;\n  top: 0;\n}");t.PageFlip=class extends class{constructor(){this.events=new Map}on(t,e){return this.events.has(t)?this.events.get(t).push(e):this.events.set(t,[e]),this}off(t){this.events.delete(t)}trigger(t,e,i=null){if(this.events.has(t))for(const s of this.events.get(t))s({data:i,object:e})}}{constructor(t,e){super(),this.isUserTouch=!1,this.isUserMove=!1,this.setting=null,this.pages=null,this.setting=(new x).getSettings(e),this.block=t}destroy(){this.ui.destroy(),this.block.remove()}update(){this.render.update(),this.pages.show()}loadFromImages(t){this.ui=new u(this.block,this,this.setting);const e=this.ui.getCanvas();this.render=new d(this,this.setting,e),this.flipController=new g(this.render,this),this.pages=new n(this,this.render,t),this.pages.load(),this.render.start(),this.pages.show(this.setting.startPage),setTimeout(()=>{this.ui.update(),this.trigger("init",this,{page:this.setting.startPage,mode:this.render.getOrientation()})},1)}loadFromHTML(t){this.ui=new c(this.block,this,this.setting,t),this.render=new w(this,this.setting,this.ui.getDistElement()),this.flipController=new g(this.render,this),this.pages=new o(this,this.render,this.ui.getDistElement(),t),this.pages.load(),this.render.start(),this.pages.show(this.setting.startPage),setTimeout(()=>{this.ui.update(),this.trigger("init",this,{page:this.setting.startPage,mode:this.render.getOrientation()})},1)}updateFromImages(t){const e=this.pages.getCurrentPageIndex();this.pages.destroy(),this.pages=new n(this,this.render,t),this.pages.load(),this.pages.show(e),this.trigger("update",this,{page:e,mode:this.render.getOrientation()})}updateFromHtml(t){const e=this.pages.getCurrentPageIndex();this.pages.destroy(),this.pages=new o(this,this.render,this.ui.getDistElement(),t),this.pages.load(),this.ui.updateItems(t),this.render.reload(),this.pages.show(e),this.trigger("update",this,{page:e,mode:this.render.getOrientation()})}clear(){this.pages.destroy(),this.ui.clear()}turnToPrevPage(){this.pages.showPrev()}turnToNextPage(){this.pages.showNext()}turnToPage(t){this.pages.show(t)}flipNext(t="top"){this.flipController.flipNext(t)}flipPrev(t="top"){this.flipController.flipPrev(t)}flip(t,e="top"){this.flipController.flipToPage(t,e)}updateState(t){this.trigger("changeState",this,t)}updatePageIndex(t){this.trigger("flip",this,t)}updateOrientation(t){this.ui.setOrientationStyle(t),this.update(),this.trigger("changeOrientation",this,t)}getPageCount(){return this.pages.getPageCount()}getCurrentPageIndex(){return this.pages.getCurrentPageIndex()}getPage(t){return this.pages.getPage(t)}getRender(){return this.render}getFlipController(){return this.flipController}getOrientation(){return this.render.getOrientation()}getBoundsRect(){return this.render.getRect()}getSettings(){return this.setting}getUI(){return this.ui}getState(){return this.flipController.getState()}getPageCollection(){return this.pages}startUserTouch(t){this.mousePosition=t,this.isUserTouch=!0,this.isUserMove=!1}userMove(t,e){this.isUserTouch||e||!this.setting.showPageCorners?this.isUserTouch&&h.GetDistanceBetweenTwoPoint(this.mousePosition,t)>5&&(this.isUserMove=!0,this.flipController.fold(t)):this.flipController.showCorner(t)}userStop(t,e=!1){this.isUserTouch&&(this.isUserTouch=!1,e||(this.isUserMove?this.flipController.stopMove():this.flipController.flip(t)))}},Object.defineProperty(t,"__esModule",{value:!0})}));
+</script>
+<script>
+(function () {
+  var CHAPTERS = [
+    { label: 'Cover',      page: 0  },
+    { label: 'Prologue',   page: 2  },
+    { label: 'Education',  page: 3  },
+    { label: 'Skills',     page: 4  },
+    { label: 'Experience', page: 5  },
+    { label: 'Voyages',    page: 6  },
+    { label: 'Trophies',   page: 9  },
+    { label: 'Crew',       page: 10 },
+    { label: 'Close',      page: 11 }
+  ];
+
+  var bookEl  = document.getElementById('book');
+  var chartEl = document.getElementById('chart');
+  var prevBtn = document.getElementById('prev');
+  var nextBtn = document.getElementById('next');
+  var buttons = [];
+
+  CHAPTERS.forEach(function (c) {
+    var li = document.createElement('li');
+    var b  = document.createElement('button');
+    b.type = 'button';
+    b.setAttribute('aria-label', 'Go to ' + c.label);
+    b.innerHTML = '<i class="star"></i><span>' + c.label + '</span>';
+    b.addEventListener('click', function () { book.flip(c.page); });
+    li.appendChild(b);
+    chartEl.appendChild(li);
+    buttons.push(b);
+  });
+
+  var book = new St.PageFlip(bookEl, {
+    width: 560,
+    height: 700,
+    size: 'stretch',
+    minWidth: 280,
+    maxWidth: 600,
+    minHeight: 350,
+    maxHeight: 750,
+    showCover: true,
+    drawShadow: true,
+    maxShadowOpacity: 0.45,
+    flippingTime: 750,
+    usePortrait: true,
+    autoSize: true,
+    mobileScrollSupport: false,
+    swipeDistance: 20,
+    clickEventForward: true
+  });
+
+  // A closed book sits on one half of the spread — slide it back to centre.
+  function centre(i, last) {
+    var shift = '';
+    if (book.getOrientation() === 'landscape') {
+      if (i <= 0) shift = 'translateX(-25%)';
+      else if (i >= last) shift = 'translateX(25%)';
+    }
+    bookEl.style.transform = shift;
+  }
+
+  function sync(idx) {
+    // the flip event reports the destination page before getCurrentPageIndex() catches up
+    var i = typeof idx === 'number' ? idx : book.getCurrentPageIndex();
+    var last = book.getPageCount() - 1;
+    // a landscape spread has two pages open — light every chapter the reader can see
+    var open = [i];
+    if (book.getOrientation() === 'landscape' && i + 1 <= last) open.push(i + 1);
+    var lit = [];
+    CHAPTERS.forEach(function (c, idx) { if (open.indexOf(c.page) !== -1) lit.push(idx); });
+    if (!lit.length) {
+      var fallback = 0;
+      CHAPTERS.forEach(function (c, idx) { if (c.page <= i) fallback = idx; });
+      lit.push(fallback);
+    }
+    buttons.forEach(function (b, idx) { b.setAttribute('aria-current', lit.indexOf(idx) !== -1 ? 'true' : 'false'); });
+    prevBtn.disabled = i <= 0;
+    nextBtn.disabled = i >= last;
+    centre(i, last);
+  }
+
+  book.on('flip', function (e) { sync(e.data); });
+  book.on('changeOrientation', function () { sync(); });
+  book.on('init', function (e) { sync(e.data && e.data.page); });
+
+  book.loadFromHTML(document.querySelectorAll('.page'));
+
+  prevBtn.addEventListener('click', function () { book.flipPrev(); });
+  nextBtn.addEventListener('click', function () { book.flipNext(); });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.target.matches('input, textarea')) return;
+    if (e.key === 'ArrowRight') book.flipNext();
+    if (e.key === 'ArrowLeft')  book.flipPrev();
+  });
+
+  window.addEventListener('resize', function () { sync(); });
+  sync();
+})();
+</script>
+</body>
+</html>
